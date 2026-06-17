@@ -29,8 +29,6 @@ const translations = {
       eyebrow: "Аяй",
       title:
         "Наборы для создания шырдаков, нацеленные на проведение качественного времени с близкими.",
-      english:
-        "Ayay - DIY kit for making your own shyrdak - traditional mosaic felt carpet",
       question: "В чем заключается главная миссия аяй?",
       p2:
         "Одна из главных миссий: помогать людям объединяться и открывать друг друга с помощью искусства и игр. Нам важны три аспекта: отношения с близкими, отношения с собой и дружба народов.",
@@ -162,8 +160,6 @@ const translations = {
       eyebrow: "Ayay",
       title:
         "Kits for making shyrdaks, created for quality time with people you love.",
-      english:
-        "Ayay - DIY kit for making your own shyrdak - traditional mosaic felt carpet",
       question: "What is AYAY’s main mission?",
       p2:
         "One of the main missions is to help people come together and discover each other through art and games. Three things matter to us: relationships with loved ones, relationship with yourself, and friendship between peoples.",
