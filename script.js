@@ -326,14 +326,14 @@ if (!translations[currentLang]) currentLang = "ru";
 let currentBookPage = 0;
 
 const bookPages = [
-  "assets/manual/book/manual-book-01.png",
-  "assets/manual/book/manual-book-02.png",
-  "assets/manual/book/manual-book-03.png",
-  "assets/manual/book/manual-book-04.png",
-  "assets/manual/book/manual-book-05.png",
-  "assets/manual/book/manual-book-06.png",
-  "assets/manual/book/manual-book-07.png",
-  "assets/manual/book/manual-book-08.png",
+  "assets/manual/book/manual-book-01.svg",
+  "assets/manual/book/manual-book-02.svg",
+  "assets/manual/book/manual-book-03.svg",
+  "assets/manual/book/manual-book-04.svg",
+  "assets/manual/book/manual-book-05.svg",
+  "assets/manual/book/manual-book-06.svg",
+  "assets/manual/book/manual-book-07.svg",
+  "assets/manual/book/manual-book-08.svg",
 ];
 
 const imagePath = (key, index) =>
