@@ -6,6 +6,8 @@ const translations = {
         "Архив памяти AYAY: DIY-набор для создания традиционного мозаичного войлочного ковра шырдак.",
       lightbox: "Превью изображения",
       close: "Закрыть превью",
+      previousPage: "Предыдущая страница",
+      nextPage: "Следующая страница",
     },
     nav: {
       mission: "Миссия",
@@ -143,6 +145,7 @@ const translations = {
     },
     ui: {
       slide: "слайд",
+      page: "Страница",
       archiveImage: "Изображение из архива AYAY",
     },
   },
@@ -153,6 +156,8 @@ const translations = {
         "A memory archive for AYAY, a DIY kit for making a traditional mosaic felt shyrdak.",
       lightbox: "Image preview",
       close: "Close preview",
+      previousPage: "Previous page",
+      nextPage: "Next page",
     },
     nav: {
       mission: "Mission",
@@ -289,6 +294,7 @@ const translations = {
     },
     ui: {
       slide: "slide",
+      page: "Page",
       archiveImage: "AYAY archive image",
     },
   },
@@ -308,9 +314,27 @@ const lightbox = document.querySelector("#lightbox");
 const lightboxImage = document.querySelector("#lightboxImage");
 const closeLightbox = document.querySelector(".lightbox__close");
 const languageButtons = document.querySelectorAll("[data-lang]");
+const bookPage = document.querySelector("[data-book-page]");
+const bookImage = document.querySelector("[data-book-image]");
+const bookPrev = document.querySelector("[data-book-prev]");
+const bookNext = document.querySelector("[data-book-next]");
+const bookCounter = document.querySelector("[data-book-counter]");
+const bookDots = document.querySelector("[data-book-dots]");
 
 let currentLang = localStorage.getItem("ayayLanguage") || "ru";
 if (!translations[currentLang]) currentLang = "ru";
+let currentBookPage = 0;
+
+const bookPages = [
+  "assets/manual/book/manual-book-01.png",
+  "assets/manual/book/manual-book-02.png",
+  "assets/manual/book/manual-book-03.png",
+  "assets/manual/book/manual-book-04.png",
+  "assets/manual/book/manual-book-05.png",
+  "assets/manual/book/manual-book-06.png",
+  "assets/manual/book/manual-book-07.png",
+  "assets/manual/book/manual-book-08.png",
+];
 
 const imagePath = (key, index) =>
   `assets/posts/${key}/${String(index).padStart(2, "0")}.jpg`;
@@ -384,6 +408,36 @@ function renderCollections() {
   archiveGrid.replaceChildren(...collections.map(renderCollection));
 }
 
+function renderBookDots() {
+  if (!bookDots) return;
+  bookDots.replaceChildren(
+    ...bookPages.map((_, index) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.dataset.bookDot = "";
+      button.classList.toggle("is-active", index === currentBookPage);
+      button.setAttribute("aria-label", `${t("ui.page")} ${index + 1}`);
+      button.setAttribute("aria-current", index === currentBookPage ? "true" : "false");
+      button.addEventListener("click", () => setBookPage(index));
+      return button;
+    }),
+  );
+}
+
+function setBookPage(index) {
+  if (!bookImage || !bookCounter) return;
+  const nextIndex = (index + bookPages.length) % bookPages.length;
+  currentBookPage = nextIndex;
+  bookPage?.classList.add("is-turning");
+  window.setTimeout(() => {
+    bookImage.src = bookPages[currentBookPage];
+    bookImage.alt = `${t("ui.page")} ${currentBookPage + 1}`;
+    bookCounter.textContent = `${currentBookPage + 1} / ${bookPages.length}`;
+    renderBookDots();
+    bookPage?.classList.remove("is-turning");
+  }, 140);
+}
+
 function applyLanguage(lang) {
   currentLang = translations[lang] ? lang : "ru";
   localStorage.setItem("ayayLanguage", currentLang);
@@ -406,6 +460,10 @@ function applyLanguage(lang) {
   lightbox.setAttribute("aria-label", t("meta.lightbox"));
   closeLightbox.setAttribute("aria-label", t("meta.close"));
   closeLightbox.title = t("meta.close");
+  bookPrev?.setAttribute("aria-label", t("meta.previousPage"));
+  bookPrev?.setAttribute("title", t("meta.previousPage"));
+  bookNext?.setAttribute("aria-label", t("meta.nextPage"));
+  bookNext?.setAttribute("title", t("meta.nextPage"));
 
   languageButtons.forEach((button) => {
     const isActive = button.dataset.lang === currentLang;
@@ -413,6 +471,7 @@ function applyLanguage(lang) {
   });
 
   renderCollections();
+  setBookPage(currentBookPage);
 }
 
 languageButtons.forEach((button) => {
@@ -430,6 +489,9 @@ closeLightbox.addEventListener("click", () => {
   lightbox.close();
 });
 
+bookPrev?.addEventListener("click", () => setBookPage(currentBookPage - 1));
+bookNext?.addEventListener("click", () => setBookPage(currentBookPage + 1));
+
 lightbox.addEventListener("click", (event) => {
   if (event.target === lightbox) {
     lightbox.close();
@@ -440,6 +502,9 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && lightbox.open) {
     lightbox.close();
   }
+  if (document.activeElement?.tagName === "INPUT" || lightbox.open) return;
+  if (event.key === "ArrowLeft") setBookPage(currentBookPage - 1);
+  if (event.key === "ArrowRight") setBookPage(currentBookPage + 1);
 });
 
 applyLanguage(currentLang);

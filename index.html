@@ -196,19 +196,18 @@
           <p class="eyebrow" data-i18n="manual.eyebrow">Процесс изготовления</p>
           <h2 id="manual-title" data-i18n="manual.title">Инструкция была частью очарования.</h2>
         </div>
-        <div class="manual-strip" aria-label="Превью страниц инструкции">
-          <button class="manual-page" type="button" data-lightbox="assets/manual/page-1.png">
-            <img src="assets/manual/page-1.png" alt="Страница инструкции с заметками о поворотах панно" data-i18n-alt="manual.alt1" />
-          </button>
-          <button class="manual-page" type="button" data-lightbox="assets/manual/page-2.png">
-            <img src="assets/manual/page-2.png" alt="Страница инструкции с двумя вариантами вышивания и рамкой" data-i18n-alt="manual.alt2" />
-          </button>
-          <button class="manual-page" type="button" data-lightbox="assets/manual/page-3.png">
-            <img src="assets/manual/page-3.png" alt="Страница инструкции с подготовкой базы" data-i18n-alt="manual.alt3" />
-          </button>
-          <button class="manual-page" type="button" data-lightbox="assets/manual/page-4.png">
-            <img src="assets/manual/page-4.png" alt="Страница инструкции с раскладкой войлока и вышиванием базы" data-i18n-alt="manual.alt4" />
-          </button>
+        <div class="manual-book" aria-label="Инструкция AYAY в виде книги">
+          <div class="book-stage">
+            <button class="book-nav book-nav--prev" type="button" aria-label="Предыдущая страница" data-book-prev title="Предыдущая страница">‹</button>
+            <div class="book-page" data-book-page>
+              <img src="assets/manual/book/manual-book-01.png" alt="Страница 1 инструкции AYAY" data-book-image />
+            </div>
+            <button class="book-nav book-nav--next" type="button" aria-label="Следующая страница" data-book-next title="Следующая страница">›</button>
+          </div>
+          <div class="book-controls" aria-label="Перелистывание инструкции">
+            <span class="book-counter" data-book-counter>1 / 8</span>
+            <div class="book-dots" data-book-dots aria-label="Страницы инструкции"></div>
+          </div>
         </div>
       </section>
 
