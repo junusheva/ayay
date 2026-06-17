@@ -8,7 +8,9 @@ const translations = {
       close: "Закрыть превью",
     },
     nav: {
+      mission: "Миссия",
       kit: "Набор",
+      videos: "Видео",
       process: "Процесс",
       posts: "Посты",
       memory: "Память",
@@ -37,6 +39,33 @@ const translations = {
       spiritTitle: "Смысл",
       spiritText:
         "Культура, которую сохраняют через действие, а не только через созерцание.",
+    },
+    mission: {
+      eyebrow: "Аяй",
+      title:
+        "Наборы для создания шырдаков, нацеленные на проведение качественного времени с близкими.",
+      english:
+        "Ayay - DIY kit for making your own shyrdak - traditional mosaic felt carpet",
+      question: "В чем заключается главная миссия аяй?",
+      p1:
+        "Недавно я рассказывала о том, почему аяй был создан в целом, это видео вы можете посмотреть на страничке. Но сегодня я хотела бы рассказать больше о посыле, который несет аяй.",
+      p2:
+        "Одна из главных миссий: помогать людям объединяться и открывать друг друга с помощью искусства и игр. Нам важны три аспекта: отношения с близкими, отношения с собой и дружба народов.",
+      point1:
+        "Мы верим, что общее дело сближает людей и помогает лучше узнать друг друга. Мы хотим предложить новый способ занятия, которое может вас сблизить.",
+      point2: "Наш набор стремится быть максимально дружелюбным и понятным.",
+      point3:
+        "Есть соседи, с которыми у нас схожи культура, традиции, и даже язык. Есть и дальние страны с кочевой культурой, близкой к нашей. Очень интересно изучать друг друга, находить сходства, выделять различия, основанные историческим прошлым.",
+    },
+    videos: {
+      eyebrow: "Видеоархив",
+      title: "Фрагменты живого AYAY.",
+      caption1: "История и настроение проекта.",
+      caption2: "Процесс, руки и войлок крупным планом.",
+      caption3: "Как набор превращается в совместное занятие.",
+      caption4: "Материалы, детали и маленькие шаги.",
+      caption5: "Тактильность и медленное ремесло.",
+      caption6: "Короткий сохраненный момент.",
     },
     kit: {
       eyebrow: "Набор",
@@ -126,7 +155,9 @@ const translations = {
       close: "Close preview",
     },
     nav: {
+      mission: "Mission",
       kit: "Kit",
+      videos: "Videos",
       process: "Process",
       posts: "Posts",
       memory: "Memory",
@@ -154,6 +185,33 @@ const translations = {
       objectText: "A small mosaic carpet inspired by traditional shyrdaks.",
       spiritTitle: "Spirit",
       spiritText: "Culture preserved through making, not only looking.",
+    },
+    mission: {
+      eyebrow: "Ayay",
+      title:
+        "Kits for making shyrdaks, created for quality time with people you love.",
+      english:
+        "Ayay - DIY kit for making your own shyrdak - traditional mosaic felt carpet",
+      question: "What is AYAY’s main mission?",
+      p1:
+        "Recently I shared why AYAY was created in the first place; you can watch that video on the page. Today I want to say more about the message AYAY carries.",
+      p2:
+        "One of the main missions is to help people come together and discover each other through art and games. Three things matter to us: relationships with loved ones, relationship with yourself, and friendship between peoples.",
+      point1:
+        "We believe that doing something together brings people closer and helps them know each other better. We want to offer a new kind of activity that can create that closeness.",
+      point2: "Our kit aims to be as friendly and understandable as possible.",
+      point3:
+        "There are neighbors whose culture, traditions, and even language are close to ours. There are also distant countries with nomadic cultures related to ours. It is deeply interesting to study one another, find similarities, and notice differences shaped by history.",
+    },
+    videos: {
+      eyebrow: "Video archive",
+      title: "Fragments of AYAY while it was alive.",
+      caption1: "The story and mood of the project.",
+      caption2: "Process, hands, and felt up close.",
+      caption3: "How the kit becomes time spent together.",
+      caption4: "Materials, details, and small steps.",
+      caption5: "Tactility and slow craft.",
+      caption6: "A short saved moment.",
     },
     kit: {
       eyebrow: "The kit",
