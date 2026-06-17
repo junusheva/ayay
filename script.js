@@ -47,8 +47,6 @@ const translations = {
       english:
         "Ayay - DIY kit for making your own shyrdak - traditional mosaic felt carpet",
       question: "В чем заключается главная миссия аяй?",
-      p1:
-        "Недавно я рассказывала о том, почему аяй был создан в целом, это видео вы можете посмотреть на страничке. Но сегодня я хотела бы рассказать больше о посыле, который несет аяй.",
       p2:
         "Одна из главных миссий: помогать людям объединяться и открывать друг друга с помощью искусства и игр. Нам важны три аспекта: отношения с близкими, отношения с собой и дружба народов.",
       point1:
@@ -62,10 +60,10 @@ const translations = {
       title: "Фрагменты живого AYAY.",
       caption1: "История и настроение проекта.",
       caption2: "Процесс, руки и войлок крупным планом.",
-      caption3: "Как набор превращается в совместное занятие.",
-      caption4: "Материалы, детали и маленькие шаги.",
-      caption5: "Тактильность и медленное ремесло.",
-      caption6: "Короткий сохраненный момент.",
+      caption3: "Почему я решила создать Аяй?",
+      caption4: "Аяй - повод собраться вместе с близкими",
+      caption5: "Легко разобраться даже самым маленьким",
+      caption6: "У вас все получится! Красота в неидеальности 🫶🏼",
     },
     kit: {
       eyebrow: "Набор",
@@ -77,6 +75,8 @@ const translations = {
       packagePdf: "Упаковка PDF",
       manualPdf: "Инструкция PDF",
       packageAlt: "Превью дизайна упаковки AYAY",
+      packageClosedAlt: "Закрытая коробка набора AYAY на красном текстиле",
+      packageOpenAlt: "Открытая коробка набора AYAY с войлоком, нитками и иглой",
     },
     manual: {
       eyebrow: "Процесс изготовления",
@@ -193,8 +193,6 @@ const translations = {
       english:
         "Ayay - DIY kit for making your own shyrdak - traditional mosaic felt carpet",
       question: "What is AYAY’s main mission?",
-      p1:
-        "Recently I shared why AYAY was created in the first place; you can watch that video on the page. Today I want to say more about the message AYAY carries.",
       p2:
         "One of the main missions is to help people come together and discover each other through art and games. Three things matter to us: relationships with loved ones, relationship with yourself, and friendship between peoples.",
       point1:
@@ -208,10 +206,10 @@ const translations = {
       title: "Fragments of AYAY while it was alive.",
       caption1: "The story and mood of the project.",
       caption2: "Process, hands, and felt up close.",
-      caption3: "How the kit becomes time spent together.",
-      caption4: "Materials, details, and small steps.",
-      caption5: "Tactility and slow craft.",
-      caption6: "A short saved moment.",
+      caption3: "Why did I decide to create AYAY?",
+      caption4: "AYAY as a reason to gather with loved ones",
+      caption5: "Easy to understand, even for the smallest makers",
+      caption6: "You can do it! Beauty is in imperfection 🫶🏼",
     },
     kit: {
       eyebrow: "The kit",
@@ -223,6 +221,8 @@ const translations = {
       packagePdf: "Package PDF",
       manualPdf: "Manual PDF",
       packageAlt: "AYAY package design preview",
+      packageClosedAlt: "Closed AYAY kit box on red textile",
+      packageOpenAlt: "Open AYAY kit box with felt, thread, and needle",
     },
     manual: {
       eyebrow: "Making process",

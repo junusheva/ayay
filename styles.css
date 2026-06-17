@@ -453,18 +453,21 @@ section[id],
 }
 
 .package-shot {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
   margin: 0;
   overflow: hidden;
-  border-radius: 8px;
-  background: var(--white);
-  box-shadow: var(--shadow);
+  background: transparent;
 }
 
 .package-shot img {
   width: 100%;
-  aspect-ratio: 1.52;
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
   object-fit: cover;
-  object-position: center 28%;
+  object-position: center;
 }
 
 .kit__copy {
