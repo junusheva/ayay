@@ -25,23 +25,6 @@ const translations = {
       browse: "Смотреть архив",
       peek: "Прикладное искусство и культура Центральной Азии",
     },
-    story: {
-      eyebrow: "Бывший бизнес, сохраненный как память",
-      title: "Маленькая коробка с войлоком, узором, временем и заботой.",
-      p1:
-        "AYAY превращал ремесло шырдака в понятный домашний набор: готовые детали из войлока, нитки, иголка, распечатанный узор и инструкция, с которой первый стежок становился не таким страшным.",
-      p2:
-        "У проекта была тихая миссия: сделать прикладное искусство Центральной Азии близким, тактильным и возможным для человека, который сидит за кухонным столом с чашкой чая и каплей смелости.",
-    },
-    facts: {
-      materialTitle: "Материал",
-      materialText: "Войлок, шерстяная нить, узор и терпеливая ручная работа.",
-      objectTitle: "Предмет",
-      objectText: "Небольшой мозаичный коврик, вдохновленный традиционными шырдаками.",
-      spiritTitle: "Смысл",
-      spiritText:
-        "Культура, которую сохраняют через действие, а не только через созерцание.",
-    },
     mission: {
       eyebrow: "Аяй",
       title:
@@ -60,8 +43,8 @@ const translations = {
     videos: {
       eyebrow: "Видеоархив",
       title: "Фрагменты живого AYAY.",
-      caption1: "История и настроение проекта.",
-      caption2: "Процесс, руки и войлок крупным планом.",
+      caption1: "Что внутри красивой коробки?",
+      caption2: "Из чего состоит набор?",
       caption3: "Почему я решила создать Аяй?",
       caption4: "Аяй - повод собраться вместе с близкими",
       caption5: "Легко разобраться даже самым маленьким",
@@ -69,11 +52,11 @@ const translations = {
     },
     kit: {
       eyebrow: "Набор",
-      title: "Tatynakai, твой первый шырдак.",
+      title: "AYAY, твой первый шырдак.",
       p1:
-        "Упаковка представляла AYAY через чистую графическую систему: глубокий бордовый логотип, повторяющийся орнамент и фразу «Shyrdak from AYAY».",
+        "AYAY - это набор для вышивания мини-шырдака. В нем есть все, чтобы соприкоснуться с древним ремеслом, даже если вы никогда до этого не вышивали: готовые детали из войлока, нитки, иголка, распечатанный узор и инструкция.",
       p2:
-        "Инструкция сохраняла практичное тепло проекта. В ней было рассказано, как подготовить нить, вышить границу, соединить детали из войлока и спокойно исправиться, если стежки пошли не туда.",
+        "У проекта была миссия: сделать прикладное искусство Центральной Азии доступным, тактильным и возможным для человека, который стремится узнать культуру Центральной Азии, будучи дома.",
       packagePdf: "Упаковка PDF",
       manualPdf: "Инструкция PDF",
       packageAlt: "Превью дизайна упаковки AYAY",
@@ -175,22 +158,6 @@ const translations = {
       browse: "Browse the archive",
       peek: "Applied arts and Central Asian culture",
     },
-    story: {
-      eyebrow: "Former business, kept as a memory",
-      title: "A small box of wool, pattern, time, and care.",
-      p1:
-        "AYAY turned the craft of shyrdak into an approachable home kit: prepared felt pieces, thread, a needle, a printed pattern, and a manual that made the first stitch less intimidating.",
-      p2:
-        "The project carried a quiet mission: to make Central Asian applied arts feel close, tactile, and possible for someone sitting at a kitchen table with a cup of tea and a little courage.",
-    },
-    facts: {
-      materialTitle: "Material",
-      materialText: "Felt, wool thread, pattern, and patient handwork.",
-      objectTitle: "Object",
-      objectText: "A small mosaic carpet inspired by traditional shyrdaks.",
-      spiritTitle: "Spirit",
-      spiritText: "Culture preserved through making, not only looking.",
-    },
     mission: {
       eyebrow: "Ayay",
       title:
@@ -209,8 +176,8 @@ const translations = {
     videos: {
       eyebrow: "Video archive",
       title: "Fragments of AYAY while it was alive.",
-      caption1: "The story and mood of the project.",
-      caption2: "Process, hands, and felt up close.",
+      caption1: "What is inside the beautiful box?",
+      caption2: "What does the kit include?",
       caption3: "Why did I decide to create AYAY?",
       caption4: "AYAY as a reason to gather with loved ones",
       caption5: "Easy to understand, even for the smallest makers",
@@ -218,11 +185,11 @@ const translations = {
     },
     kit: {
       eyebrow: "The kit",
-      title: "Tatynakai, your shyrdak starter.",
+      title: "AYAY, your first shyrdak.",
       p1:
-        "The package introduced AYAY with a clean graphic system: a deep wool-burgundy logo, a repeating ornamental pattern, and the phrase “Shyrdak from AYAY.”",
+        "AYAY is a kit for embroidering a mini shyrdak. It includes everything you need to touch an ancient craft, even if you have never embroidered before: ready-made felt pieces, threads, a needle, a printed pattern, and instructions.",
       p2:
-        "The manual preserved the practical warmth of the project. It explained how to prepare the thread, sew the border, connect the felt pieces, and recover calmly when the stitches went sideways.",
+        "The project had a mission: to make the applied arts of Central Asia accessible, tactile, and possible for someone who wants to learn about Central Asian culture from home.",
       packagePdf: "Package PDF",
       manualPdf: "Manual PDF",
       packageAlt: "AYAY package design preview",

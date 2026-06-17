@@ -270,52 +270,6 @@ section[id],
   letter-spacing: 0;
 }
 
-.intro {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.intro__copy {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px;
-  max-width: 970px;
-  color: var(--muted);
-  font-size: clamp(1rem, 1.7vw, 1.2rem);
-}
-
-.intro__copy p {
-  margin: 0;
-}
-
-.facts {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1px;
-  margin: 44px 0 0;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--line);
-}
-
-.facts div {
-  padding: 24px;
-  background: var(--white);
-}
-
-.facts dt {
-  color: var(--burgundy);
-  font-size: 0.78rem;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.facts dd {
-  margin: 10px 0 0;
-  color: var(--muted);
-}
-
 .mission {
   width: 100%;
   padding-inline: max(20px, calc((100vw - 1120px) / 2));
@@ -840,7 +794,6 @@ section[id],
   }
 
   .section__heading,
-  .intro__copy,
   .mission__layout,
   .kit__layout,
   .feed__layout,
@@ -946,7 +899,6 @@ section[id],
     font-size: 1.12rem;
   }
 
-  .facts,
   .mission-points,
   .archive-grid {
     grid-template-columns: 1fr;
