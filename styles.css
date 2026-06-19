@@ -902,6 +902,10 @@ section[id],
     font-size: clamp(2rem, 13vw, 3.5rem);
   }
 
+  .mission__intro h2 {
+    font-size: clamp(2rem, calc(13vw - 3px), 3.5rem);
+  }
+
   .mission__body {
     padding: 20px;
   }
