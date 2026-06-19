@@ -289,15 +289,17 @@ if (!translations[currentLang]) currentLang = "ru";
 let currentBookPage = 0;
 
 const bookPages = [
-  "assets/manual/book/manual-book-01.svg",
-  "assets/manual/book/manual-book-02.svg",
-  "assets/manual/book/manual-book-03.svg",
-  "assets/manual/book/manual-book-04.svg",
-  "assets/manual/book/manual-book-05.svg",
-  "assets/manual/book/manual-book-06.svg",
-  "assets/manual/book/manual-book-07.svg",
-  "assets/manual/book/manual-book-08.svg",
+  "assets/manual/book/manual-book-01.png",
+  "assets/manual/book/manual-book-02.png",
+  "assets/manual/book/manual-book-03.png",
+  "assets/manual/book/manual-book-04.png",
+  "assets/manual/book/manual-book-05.png",
+  "assets/manual/book/manual-book-06.png",
+  "assets/manual/book/manual-book-07.png",
+  "assets/manual/book/manual-book-08.png",
 ];
+
+const preloadedBookPages = new Set();
 
 const imagePath = (key, index) =>
   `assets/posts/${key}/${String(index).padStart(2, "0")}.jpg`;
@@ -387,6 +389,15 @@ function renderBookDots() {
   );
 }
 
+function preloadBookPages() {
+  bookPages.forEach((src) => {
+    if (preloadedBookPages.has(src)) return;
+    const image = new Image();
+    image.src = src;
+    preloadedBookPages.add(src);
+  });
+}
+
 function setBookPage(index) {
   if (!bookImage || !bookCounter) return;
   const nextIndex = (index + bookPages.length) % bookPages.length;
@@ -398,6 +409,7 @@ function setBookPage(index) {
     bookCounter.textContent = `${currentBookPage + 1} / ${bookPages.length}`;
     renderBookDots();
     bookPage?.classList.remove("is-turning");
+    preloadBookPages();
   }, 140);
 }
 
